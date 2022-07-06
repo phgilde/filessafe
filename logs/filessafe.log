@@ -1,0 +1,107 @@
+Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\app\routes.py", line 27, in upload
+    with open(os.path.join("uploads", secure_filename(filename)), "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads\\4518022796'
+Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\app\routes.py", line 27, in upload
+    with open(os.path.join("uploads", secure_filename(filename)), "x") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads\\5537799017'
+Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\app\routes.py", line 27, in upload
+    with open(
+FileNotFoundError: [Errno 2] No such file or directory: 'uploads\\5239884112'
+Exception on /upload [POST]
+Traceback (most recent call last):
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\app\routes.py", line 31, in upload
+    db.session.add(File(int(filename), os.path.join("uploads", secure_filename(filename))))
+TypeError: __init__() takes 1 positional argument but 3 were given
+Exception on /viewfile/0201314564 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\app\routes.py", line 48, in viewfile
+    send_file(file.filepath)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\helpers.py", line 610, in send_file
+    return werkzeug.utils.send_file(
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\werkzeug\utils.py", line 440, in send_file
+    stat = os.stat(path)
+FileNotFoundError: [WinError 3] Das System kann den angegebenen Pfad nicht finden: 'C:\\Users\\Philip\\Documents\\programmieren\\python\\filessafe\\filessafe\\app\\uploads\\0201314564'
+Exception on /viewfile/8405619161 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1526, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1545, in finalize_request
+    response = self.make_response(rv)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1701, in make_response
+    raise TypeError(
+TypeError: The view function for 'viewfile' did not return a valid response. The function either returned None or ended without a return statement.
+Exception on /viewfile [GET]
+Traceback (most recent call last):
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\app\routes.py", line 53, in viewfile
+    return render_template("viewfile.hmtl")
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\templating.py", line 149, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\Philip\Documents\programmieren\python\filessafe\filessafe\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: viewfile.hmtl

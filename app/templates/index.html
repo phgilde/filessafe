@@ -1,6 +1,5 @@
-<html>
-    <body>
-        <input type=file>
-        <button></button>
-    </body>
-</html>
+{% extends "base.html" %} {% block content %}
+<input type="file" id="fileselected" />
+<button id="submitfile">Encrypt and upload</button>
+<script src="{{ url_for('static', filename='js/upload.js')}}"></script>
+{% endblock %}

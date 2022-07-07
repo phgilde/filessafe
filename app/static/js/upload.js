@@ -11,8 +11,8 @@ $(document).ready(function () {
 			alert("The upload limit is 1MB!");
 			return false;
 		}
-		var password = "";
-		var filename = "";
+		var password = "1";
+		var filename = "1";
 		for (i = 0; i < 10; i++) {
 			password += Math.floor(Math.random() * 10);
 			filename += Math.floor(Math.random() * 10);

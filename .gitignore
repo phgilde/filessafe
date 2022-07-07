@@ -1,2 +1,6 @@
 venv
 .vscode
+app/app.db
+uploads/*
+logs/*
+app/__pycache__

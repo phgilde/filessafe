@@ -23,8 +23,8 @@ def upload():
     if File.query.get(file_id):
         flash("Invalid filename")
         return redirect(url_for("index"))
-    file = request.form["encryptedfile"]
-    with open(os.path.join("uploads", secure_filename(filename)), "x") as f:
+    file = request.form["encryptedfile"].encode("ascii")
+    with open(os.path.join("uploads", secure_filename(filename)), "xb") as f:
         f.write(file)
     db.session.add(
         File(
@@ -48,8 +48,8 @@ def getfile(file_id):
     if not file:
         flash("Unknown filename")
         return redirect(url_for("index"))
-    with open(file.filepath) as f:
-        return json.dumps({"file": f.read(), "name": file.filename_crypt})
+    with open(file.filepath, "rb") as f:
+        return json.dumps({"file": f.read().decode("ascii"), "name": file.filename_crypt})
 
 
 @app.route("/viewfile")

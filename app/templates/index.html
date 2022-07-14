@@ -1,5 +1,8 @@
 {% extends "base.html" %} {% block content %}
-<input type="file" id="fileselected" />
-<button id="submitfile">Encrypt and upload</button>
-<script src="{{ url_for('static', filename='js/upload.js')}}"></script>
+<div class="jumbotron">
+    <p>You encrypt the file in the browser before you send it to us. No one who you dont share the link with can access this file - not even us.</p>
+	<input type="file" id="fileselected" />
+	<button id="submitfile" class="btn btn-default">Encrypt and upload</button>
+	<script src="{{ url_for('static', filename='js/upload.js')}}"></script>
+</div>
 {% endblock %}
